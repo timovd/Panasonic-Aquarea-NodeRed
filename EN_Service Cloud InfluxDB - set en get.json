@@ -14,6 +14,17 @@
     "birthQos": "0"
   },
   {
+    "id": "d7f51326.fd615",
+    "type": "influxdb",
+    "z": "4656b25f.76fa2c",
+    "hostname": "127.0.0.1",
+    "port": "8086",
+    "database": "Panasonic",
+    "name": "Panasonic",
+    "usetls": false,
+    "tls": ""
+  },
+  {
     "id": "7409323c.8bf6cc",
     "type": "mqtt-broker",
     "broker": "127.0.0.1",
@@ -438,6 +449,19 @@
     ]
   },
   {
+    "id": "87c2a588.5f7408",
+    "type": "influxdb out",
+    "z": "4656b25f.76fa2c",
+    "influxdb": "d7f51326.fd615",
+    "name": "",
+    "measurement": "current",
+    "precision": "",
+    "retentionPolicy": "",
+    "x": 1145.9681816101074,
+    "y": 967.4762277603149,
+    "wires": []
+  },
+  {
     "id": "d074a45b.e969e8",
     "type": "inject",
     "z": "4656b25f.76fa2c",
@@ -507,6 +531,19 @@
         "81b5828b.17e3f"
       ]
     ]
+  },
+  {
+    "id": "a2eb9050.943ff",
+    "type": "influxdb out",
+    "z": "4656b25f.76fa2c",
+    "influxdb": "d7f51326.fd615",
+    "name": "",
+    "measurement": "average",
+    "precision": "",
+    "retentionPolicy": "",
+    "x": 1429.5237812466094,
+    "y": 1118.253950542874,
+    "wires": []
   },
   {
     "id": "81b5828b.17e3f",
